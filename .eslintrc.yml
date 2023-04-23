@@ -1,0 +1,16 @@
+# Force _all_ JS to be ECMAScript 3, since that's the version implemented
+# by ExtendScript. The "client" JS _could_ be written with modern language
+# features, but keeping it consistent seems more valuable.
+parserOptions:
+  ecmaVersion: 3
+  sourceType: script
+
+overrides:
+  - files:
+      - "*.js"
+      - "*.jsx"
+    parserOptions:
+      ecmaFeatures:
+        jsx: true
+      ecmaVersion: 3
+      sourceType: script

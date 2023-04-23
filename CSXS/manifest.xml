@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.percygrunwald.PPROAutomationsPanel" ExtensionBundleVersion="11.1" ExtensionBundleName="Premiere Pro sample panel"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionList>
+    <Extension Id="com.percygrunwald.PPROAutomationsPanel" Version="0.0.1" />
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PPRO" Version="9.0" />
+    </HostList>
+    <LocaleList>
+      <Locale Code="All" />
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="6.0" />
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+
+  <DispatchInfoList>
+    <Extension Id="com.percygrunwald.PPROAutomationsPanel">
+      <DispatchInfo >
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./lib/jsx/loader.jsx</ScriptPath>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>PPRO Automations Panel</Menu>
+          <Geometry>
+            <Size>
+              <Height>500</Height>
+              <Width>500</Width>
+            </Size>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

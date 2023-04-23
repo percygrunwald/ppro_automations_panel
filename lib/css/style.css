@@ -1,0 +1,22 @@
+body {
+  background: #aaa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 1em 1em;
+  padding: 1em;
+}
+
+#reloadContainer {
+  background: white;
+}
+
+#actions {
+  background: white;
+  padding: 0 0 1em 0;
+}
+
+button {
+  margin: 1em 1em 0 1em;
+}
